@@ -2,6 +2,7 @@
 public class Die
 {
 	private int lastRoll;
+	private boolean predictible =false;
 
 	public Die()
 	{
