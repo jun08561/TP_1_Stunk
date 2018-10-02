@@ -15,12 +15,25 @@ public class DieTest
 	@After
 	public void tearDown() throws Exception
 	{
+		
 	}
 
 	@Test
-	public void test()
+	public void test_initialization_of_predictable_die ()
 	{
-		fail("Not yet implemented");
+		int[] init_values =new int[] {3,2,1};
+	    Die die = new Die(init_values);
+	    die.roll();
+	    int value= die.getLastRoll();
+	    
+	    assertEquals("first value not three",3,value);
+	    
+	    
+	    
+	    
+	    
+	    
+		
 	}
 
 }
