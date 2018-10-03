@@ -3,6 +3,7 @@ public class Die
 	private int lastRoll;
 	private boolean predictible =false;
 	private int[] rolls;
+	private int index_of_next_roll;
 
 
 	public Die()
@@ -16,8 +17,10 @@ public class Die
 		return this.lastRoll;
 	}
     public Die(int[] predictable_rolls) {
-    	predictible = true;
-    	rolls = predictable_rolls;
+    	this.predictible = true;
+    	this.rolls = predictable_rolls;
+    	this.index_of_next_roll =0;
+    	
     	
           
     }
@@ -28,7 +31,8 @@ public class Die
 			this.lastRoll = (int) (Math.random() * 6 + 1);
 		}
 		else {
-			this.lastRoll = this.rolls[0];
+			this.lastRoll = this.rolls[index_of_next_roll];
+			index_of_next_roll++;
 		}
 		
 	}

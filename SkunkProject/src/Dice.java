@@ -15,7 +15,7 @@ public class Dice
 	// Instance fields (variables) may be declared anywhere in class body
 	// Convention: put at top
 
-	private int lastRoll;
+	public int lastRoll;
 	private Die die1;
 	private Die die2;
 
@@ -71,7 +71,7 @@ public class Dice
 
 	// static methods can go anywhere - but at end is standard
 
-	public static final int NUM_TRIALS = 360;
+	public static final int NUM_TRIALS = 10;
 
 	public static void main(String[] args)
 	{
