@@ -1,3 +1,5 @@
+import edu.princeton.cs.introcs.StdOut;
+
 public class Die
 {
 	private int lastRoll;
@@ -42,5 +44,6 @@ public class Die
 	{
 		return "Die: " + this.getLastRoll();
 	}
+	
 
 }
