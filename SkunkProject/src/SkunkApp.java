@@ -14,8 +14,9 @@ public class SkunkApp
 		StdOut.println("Welcome to  635 Skunk!");
 		
 		Dice dice = new Dice();
+		StdOut.println("Please enter how many time you want to play:");
+		int n = StdIn.readInt(); 
 		
-		int n = StdIn.readInt();  
 		
 		for (int i=0;i<=n;i++) {
 			dice.roll();
@@ -35,6 +36,8 @@ public class SkunkApp
 	    int value= die.getLastRoll();
 	    StdOut.println(die.toString());
 		
+	    
+	    
 		
 	
 		
