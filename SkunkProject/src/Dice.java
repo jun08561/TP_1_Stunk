@@ -1,3 +1,5 @@
+import org.junit.validator.PublicClassValidator;
+
 import edu.princeton.cs.introcs.StdOut;
 
 /**
@@ -18,6 +20,7 @@ public class Dice
 	public int lastRoll;
 	private Die die1;
 	private Die die2;
+	public Object getDie2;
 
 	// Constructors (object initializers) also can be declared anywhere
 	// Convention: after instance fields/variables
@@ -90,4 +93,23 @@ public class Dice
 		StdOut.println("Actual count: " + doubleSkunkCount);
 		StdOut.println("Expected count: " + (NUM_TRIALS / 36.0));
 	}
+
+	public Die getDie1()
+	{
+		// TODO Auto-generated method stub
+		return this.die1;
+	}
+	public Die getDie2()
+	{
+		// TODO Auto-generated method stub
+		return this.die2;
+	}
+    public void setDie1(Die d) {
+    	this.die1 =d;
+    
+    }
+    public void setDie2(Die d) {
+    	this.die1 =d;
+    
+    }
 }
